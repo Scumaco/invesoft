@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
 
-    <title>Administración</title>
+    <title>Super Usuario</title>
     <!--plantilla #1-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -45,24 +45,6 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="administracion.html">
-                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                        <i class="fas fa-boxes"></i>
-                        <span>Bodegas</span>
-                      </a>
-                      <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar" style="">
-                        <div class="bg-white py-2 collapse-inner rounded">
-                          <h6 class="collapse-header">Custom Utilities:</h6>
-                          <a class="collapse-item" href="utilities-color.html">Colors</a>
-                          <a class="collapse-item" href="utilities-border.html">Borders</a>
-                          <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                          <a class="collapse-item" href="utilities-other.html">Other</a>
-                        </div>
-                      </div>
-                </a>
-            </li>
 
 
             <!-- Divider -->
@@ -75,23 +57,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Estadisticas</span></a>
+                    <span>Usuarios</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AgregarUsuario.html">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Agregar Usuario</span></a>
             </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-            <!--BOTON DE CARGAR Y LISTAR PORRDUCTO-->
-            <li class="nav-item">
-                <a class="nav-link" href="agregarProducto.html">
-                    <i class="fas fa-box"></i>
-                    <button type="button" class="btn btn-success">Agregar Producto</button>
-                </a>
-            </li>
-
+         
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -130,30 +104,7 @@
                             </div>
                         </div>
                     </form>
-                    <!-- Nav Item - Utilities Collapse Menu -->
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Empresa
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Bodega 1</a>
-                            <a class="dropdown-item" href="#">Bodega 2</a>
-                            <a class="dropdown-item" href="#">Bodeha 3</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
-                            Bodegas
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                    </div>
+                    
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -253,85 +204,118 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
+                    <!-- Page Heading CODIGO-->
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">Fecha</th>
-                                <th scope="col">Hora</th>
-                                <th scope="col">Nombre Producto</th>
-                                <th scope="col">Cantidad</th>
-                                <th scope="col">Descripcion</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Identificación</th>
+                                <th scope="col">Nit de la Empresa</th>
+                                <th scope="col">Nombre de la empresa</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Cargo</th>
+                                <th scope="col">Ciudad</th>
+                                <th scope="col">Dirección</th>
                                 <th></th>
                                 <th></th>
                                 <th></th>
-                                <th></th>
+                                
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td><input type="date"></td>
-                                <td><input type="time"></td>
-                                <td>Motos</td>
-                                <td>500</td>
-                                <td>Producto delicado</td>
-                                <td><a href="verProducto.html"><button type="button" class="btn btn-primary">Ver</button></a></td>
-                                <td><button type="button" class="btn btn-warning">Editar</button></td>
-                                <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                                
+                                <td>Antonio</td>
+                                <td>Aguilar</td>
+                                <td>12345678909</td>
+                                <td>123213</td>
+                                <td>POSTOBON</td>
+                                <td>postobon@postobon.com</td>
+                                <td>Gerente</td>
+                                <td>Medellín</td>
+                                <td>caller 123</td>
+                                <td><div class="btn-group">
+                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Opcion
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-primary">Ver</button></a>
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-warning">Editar</button></a>
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-danger">Eliminar</button></a>
+                                     
+                                </div></td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td><input type="date"></td>
-                                <td><input type="time"></td>
-                                <td>llantas</td>
-                                <td>50</td>
-                                <td>Producto Agotandoce</td>
-                                <td><button type="button" class="btn btn-primary" id="#modalver">Ver</button>
-                                <td><button type="button" class="btn btn-warning">Editar</button>
-                                <td><button type="button" class="btn btn-danger">Eliminar</button>
-                                </td>
+                                <th scope="row">1</th>
+                                <td>Antonio</td>
+                                <td>Aguilar</td>
+                                <td>12345678909</td>
+                                <td>123213</td>
+                                <td>POSTOBON</td>
+                                <td>postobon@postobon.com</td>
+                                <td>Gerente</td>
+                                <td>Medellín</td>
+                                <td>caller 123</td>
+                                <td><div class="btn-group">
+                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Opcion
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-primary">Ver</button></a>
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-warning">Editar</button></a>
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-danger">Eliminar</button></a>
+                                     
+                                </div></td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td><input type="date"></td>
-                                <td><input type="time"></td>
-                                <td>motor</td>
-                                <td>1000</td>
-                                <td>Producto delicado</td>
-                                <td><button type="button" class="btn btn-primary">Ver</button>
-                                <td><button type="button" class="btn btn-warning">Editar</button>
-                                <td><button type="button" class="btn btn-danger">Eliminar</button>
-                                </td>
-                            </tr>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td><input type="date"></td>
-                                <td><input type="time"></td>
-                                <td>motor</td>
-                                <td>1000</td>
-                                <td>Producto delicado</td>
-                                <td><button type="button" class="btn btn-primary">Ver</button>
-                                <td><button type="button" class="btn btn-warning">Editar</button>
-                                <td><button type="button" class="btn btn-danger">Eliminar</button>
-                                </td>
-                            </tr>
+                                <th scope="row">1</th>
+                                <td>Antonio</td>
+                                <td>Aguilar</td>
+                                <td>12345678909</td>
+                                <td>123213</td>
+                                <td>POSTOBON</td>
+                                <td>postobon@postobon.com</td>
+                                <td>Gerente</td>
+                                <td>Medellín</td>
+                                <td>caller 123</td>
+                                <td><div class="btn-group">
+                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Opcion
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-primary">Ver</button></a>
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-warning">Editar</button></a>
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-danger">Eliminar</button></a>
+                                     
+                                </div></td>
                             </tr>
                             <tr>
-                                <th scope="row">5</th>
-                                <td><input type="date"></td>
-                                <td><input type="time"></td>
-                                <td>motor</td>
-                                <td>1000</td>
-                                <td>Producto delicado</td>
-                                <td><button type="button" class="btn btn-primary">Ver</button>
-                                <td><button type="button" class="btn btn-warning">Editar</button>
-                                <td><button type="button" class="btn btn-danger">Eliminar</button>
-                                </td>
+                                <th scope="row">1</th>
+                                <td>Antonio</td>
+                                <td>Aguilar</td>
+                                <td>12345678909</td>
+                                <td>123213</td>
+                                <td>POSTOBON</td>
+                                <td>postobon@postobon.com</td>
+                                <td>Gerente</td>
+                                <td>Medellín</td>
+                                <td>caller 123</td>
+                                <td><div class="btn-group">
+                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Opcion
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-primary">Ver</button></a>
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-warning">Editar</button></a>
+                                      <a class="dropdown-item" href="#"><button type="button" class="btn btn-danger">Eliminar</button></a>
+                                     
+                                </div></td>
                             </tr>
+
+                           
+                           
                         </tbody>
                     </table>
 
@@ -363,26 +347,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+  
     
 
 

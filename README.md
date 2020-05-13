@@ -1,0 +1,1 @@
+[![Board Status](https://dev.azure.com/sebascumaco2/45b67224-c4e1-4589-a4b9-b5467bb42a07/20c6197a-c3c5-4073-af3c-68ce9eacdeb0/_apis/work/boardbadge/71ca12ee-87ba-48ef-899d-fa2231f6e7ce)](https://dev.azure.com/sebascumaco2/45b67224-c4e1-4589-a4b9-b5467bb42a07/_boards/board/t/20c6197a-c3c5-4073-af3c-68ce9eacdeb0/Microsoft.EpicCategory)
